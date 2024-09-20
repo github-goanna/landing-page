@@ -1,1 +1,1 @@
-## Odin Priject - landing page exercise
+## Odin Project - landing page exercise
