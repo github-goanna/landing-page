@@ -6,6 +6,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: stretch;
+    overflow-y: auto;
 }
 
 .container{
@@ -14,12 +16,17 @@ body {
     align-items: center;
 }
 
-.pagewidth{
-    width: 700px;
+.innercontainer{
+  margin: 0 200px;
+  max-width: 1000px;
 }
 
 .dark{
     background-color: #1f2937;
+}
+
+.grey{
+    background-color: #e5e7eb;
 }
 
 .header {
@@ -27,11 +34,12 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #1f2937;
+    margin-bottom: 100px;
 }
-
 .logo {
     font-size: 24px;
     color: #f9faf8;
+    font-weight: bold;
 }
 
 .header-links>ul {
@@ -55,12 +63,13 @@ body {
     justify-content: center;
     color: white;
     background-color: #1f2937;
-    padding: 50px 0;
+    margin: 100px 0;
 }
 
 .rightupper,
 .leftupper {
     display: flex;
+    flex-basis: 50%;
 }
 
 .leftupper{
@@ -69,7 +78,7 @@ body {
 }
 
 .rightupper{
-    background-color: rgb(139, 139, 139);
+    background-color: rgb(109 116 125);
     justify-content: center;
     align-items: center;
 }
@@ -85,9 +94,23 @@ font-size: 18px;
 color: #e5e7eb;
 }
 
+.signup-button.top{
+    align-self: flex-start;
+}
+
+.signup-button{
+    color: #e5e7eb;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #3882f6;
+    padding: 10px 40px;
+    border-radius: 15px;
+}
+
 .info {
     display: flex;
     flex-direction: column;
+    margin: 100px 0;
 }
 
 .info-header {
@@ -99,6 +122,7 @@ color: #e5e7eb;
 
 .cards {
     display: flex;
+    justify-content: center;
     gap: 40px;
 }
 
@@ -107,19 +131,35 @@ color: #e5e7eb;
     flex-direction: column;
 }
 
-img{
-    width: 100px;
+.img{
+    width: 120px;
+    height: 120px;
+    border-color: #3882f6;
+    border-style: solid;
+    border-radius: 10px;
+}
+.imgtext{
+    max-width: 100px;
+    text-align: center;
 }
 
 .quote{
     display: flex;
     flex-direction: column;
+    margin: 100px 0;
 }
 
 .quote-text{
     font-size: 36px;
-    font-style: light italic;
+    font-style: italic;
+    font-weight: 10;
     color: #1f2937;
+}
+
+.quote-author{
+    font-size: 28px;
+    font-weight: 1000;
+    align-self: flex-end;
 }
 
 .signup{
@@ -129,4 +169,8 @@ img{
 .footer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    padding: 20px;
 }
