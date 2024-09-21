@@ -1,24 +1,23 @@
 body {
     height: 100vh;
-    margin: 0;
-    overflow: hidden;
     font-family: Roboto, sans-serif;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: stretch;
-    overflow-y: auto;
+    max-width: 1200px;
 }
 
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
 }
 
 .innercontainer{
-  margin: 0 200px;
   max-width: 1000px;
+  padding: 0 30px;
 }
 
 .dark{
@@ -27,6 +26,10 @@ body {
 
 .grey{
     background-color: #e5e7eb;
+}
+
+.white{
+    background-color: white;
 }
 
 .header {
@@ -44,7 +47,7 @@ body {
 
 .header-links>ul {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 
 .header-links li {
@@ -63,7 +66,7 @@ body {
     justify-content: center;
     color: white;
     background-color: #1f2937;
-    margin: 100px 0;
+    padding-bottom: 50px;
 }
 
 .rightupper,
@@ -75,6 +78,8 @@ body {
 .leftupper{
     flex-direction: column;
     background-color: #1f2937;
+    margin-right: 20px;
+
 }
 
 .rightupper{
@@ -92,10 +97,7 @@ body {
 .hero-secondary{
 font-size: 18px;
 color: #e5e7eb;
-}
-
-.signup-button.top{
-    align-self: flex-start;
+margin-bottom: 10px;
 }
 
 .signup-button{
@@ -105,12 +107,19 @@ color: #e5e7eb;
     background-color: #3882f6;
     padding: 10px 40px;
     border-radius: 15px;
+    border-color: #e5e7eb;
+    border-style: solid;
+}
+
+.upper .signup-button{
+    align-self: flex-start;
+    border-width: 0;
 }
 
 .info {
     display: flex;
     flex-direction: column;
-    margin: 100px 0;
+    margin: 50px 0;
 }
 
 .info-header {
@@ -118,6 +127,7 @@ color: #e5e7eb;
     font-size: 36px;
     color: #1f2937;
     font-weight: 900;
+    margin-bottom: 30px;
 }
 
 .cards {
@@ -146,7 +156,7 @@ color: #e5e7eb;
 .quote{
     display: flex;
     flex-direction: column;
-    margin: 100px 0;
+    padding: 70px 0;
 }
 
 .quote-text{
@@ -164,6 +174,20 @@ color: #e5e7eb;
 
 .signup{
     display: flex;
+    background-color: #3882f6;
+    padding: 30px 100px;
+    border-radius: 10px;
+    gap: 100px;
+    margin: 50px 0;
+}
+
+.signup > *{
+    color: #e5e7eb;
+}
+
+.signup-title{
+    font-size: 22px;
+    font-weight: 1000;
 }
 
 .footer {
